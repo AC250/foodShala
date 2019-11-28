@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\foodItem;
 use App\order;
-use App\restaurant;
 use App\User;
 class orderController extends Controller
 {

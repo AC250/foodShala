@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\foodItem;
 use App\order;
-use App\restaurant;
 use App\User;
 class menuController extends Controller
 {
@@ -27,9 +26,14 @@ class menuController extends Controller
      */
     public function create()
     {
-        //$items = foodItem::orderBy('name','asc')->paginate(5);
-        return view('rHome.create');
         
+        if(auth()->user()->role == "Restaurant"){
+        return view('rHome.create');
+        }
+        else
+        return redirect('/home')->with('error', 'cannot create');
+       
+       // return redirect('/home');
     }
 
     /**

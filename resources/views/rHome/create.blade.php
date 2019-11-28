@@ -20,7 +20,11 @@
               {{Form::text('price', '', ['class'=>"form-control", 'id'=>"inputText"])}}
             </div>
         </div>
+        @if(auth()->user()->role == "Restaurant")
         {{Form::submit('Add',['class'=>'btn btn-primary btn-lg'])}}
+        @else
+        {{Form::submit('Add',['class'=>'btn btn-primary disabled'])}}
+        @endif
         {!!Form::close()!!}
         
 @endsection
