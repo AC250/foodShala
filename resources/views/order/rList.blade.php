@@ -5,7 +5,7 @@
     <ul class = "list-group">
             @foreach($rname as $rn)
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <h4 class="display-5"> {{$rn}}
+                    <h4 class="display-5"> {{$rn->name}}
                     </h4> 
                     {!!Form::open(['action'=>'orderController@store', 'method'=>'POST'])!!}
                     <div class="col-sm-10">

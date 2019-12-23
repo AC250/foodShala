@@ -15,7 +15,7 @@ class menuController extends Controller
      */
     public function index()
     {
-        $items = foodItem::orderBy('name','asc')->paginate(10);
+        $items = foodItem::orderBy('name','asc')->paginate(5);
         return view('order.menu')->with('items',$items);
     }
 

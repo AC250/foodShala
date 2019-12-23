@@ -12,7 +12,7 @@
                 </li>
             @endforeach
         </ul>
-        {{$items->links()}};
+        {{$items->links()}}
     @else
         <h3>NO items found</h3>
     @endif
