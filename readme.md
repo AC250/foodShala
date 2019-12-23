@@ -1,3 +1,5 @@
+Foodshala is a food ordering website that displays the menu items, has options for restaurants to add new food items, for users to order the food and not add items. Instead of ordering from the restaurant user selects the food item they want to order and then a list of restaurants is displayed that they can order from. User and Restaurants have the option to view their latest order in the dashboard. All of this is secured by authorization and the registration form specifies if you are a user or a restaurant.
+
 For the Frontend part this is where all the web pages are :
 https://github.com/AC250/foodShala/tree/master/resources/views 
 
